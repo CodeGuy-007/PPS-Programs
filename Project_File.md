@@ -1,13 +1,29 @@
-			Project File
-              Programming for Problem Solving
-			
+				Project File
+			Programming for Problem Solving
+-----------------------------------------------------------------		
 	Name: Akshat Saluja
   	Branch: IT-A1
   	Roll No: 1921007
-  	Submitted To: Prof. Ranjodh Kaur/
+  	Submitted To: Prof. Ranjodh Kaur
+------------------------------------------------------------------	
 
 
-////////////////////// Farenheit to Centigrade /////////////////////////
+////////////////////// Displaying College Address  /////////////////////
+```
+#include<stdio.h>
+int main()
+{
+    printf("Guru Nanak Dev Engineering College,\nGill Road,\nLudhiana, Punjab");
+    return 0;
+}
+
+Output:
+Guru Nanak Dev Engineering College,
+Gill Road,
+Ludhiana, Punjab
+```
+
+////////////////////// Fahrenheit to Centigrade /////////////////////////
 ```
 #include <stdio.h>
 float temp_f;     /* degrees fahrenheit */
@@ -512,4 +528,3 @@ Output:
 Enter the factorial of:5
 5 X 4 X 3 X 2 X 1 X = 120
 ```
-
