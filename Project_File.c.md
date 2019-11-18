@@ -1,10 +1,10 @@
                 	        Project File
               		Programming for Problem Solving
 
-	Name: Akshat Saluja
-	Branch: IT-A1
-	Roll No: 1921007
-	Submitted To: Prof. Ranjodh Kaur
+Name: Akshat Saluja
+Branch: IT-A1
+Roll No: 1921007
+Submitted To: Prof. Ranjodh Kaur
 
 
 	////////////////////// Farenheit to Centigrade /////////////////////////
