@@ -30,7 +30,7 @@ Input a temperature (in Centigrade): 45
 
 ```
 
-///////////////////////////Function Calling///////////////////////////////////
+///////////////////////////  Function Calling  ///////////////////////////////////
 ```
 #include<stdio.h>
 int akshat();            //function declaration ,different from variable declaration (like int a)//
@@ -49,3 +49,295 @@ return 0;
 output:
 hi Akshat
 ```
+
+
+///////////////////////////////  Even-Odd  /////////////////////////
+```
+#include<stdio.h>
+int main()
+{
+     int a;
+     printf("\nEnter the  number:");
+     scanf("%d", &a);
+     if(a%2==0)
+     printf("\n\nThe number you entered is EVEN\n\n");
+     else
+     printf("\n\nThe number you entered is ODD\n\n");
+
+     return 0;
+}
+                                                                                                           
+Output:
+Enter the  number:8
+
+
+The number you entered is EVEN
+```
+
+////////////////////////// The Fizz Buzz Game /////////////////////////
+              
+```			  
+#include<stdio.h>
+int main()
+{                                                                                                                                     int a,b,c,d;
+        printf("\n So lets start the game");
+        printf("\n Enter the number:");
+        scanf("%d", &a);                                                                                                               			b=a%3;c=a%5;
+        d=a%15;
+        if (d==0)       
+		{                                                                                                                     					printf("\n\nfizzbuzz\n\n");
+        }
+        else if (b==0)
+        {
+                printf("\n\nfizz\n\n");
+        }
+        else if (c==0)
+        {                                                                                                                                     printf("\n\nbuzz\n\n");                                        
+              }
+        else
+        {
+        printf("\n\n %d \n\n", a);
+        }
+}                                                                                                                                                                                                                                                      
+
+Output:
+ So lets start the game
+ Enter the number:45
+
+
+fizzbuzz
+```
+
+/////////////////////////////Sum and Average of 5 Numbers//////////////////
+
+```
+#include <stdio.h>
+ 
+void main(){
+	int n, i, sum = 0;
+    float avg; 
+	for(i = 0; i < 5; i++){
+		printf("enter the %d number:",i+1)
+		scanf("%d", &n);
+		sum += n;
+	}
+	avg = sum / 5;
+	printf("Sum of numbers is %d and average is %d",sum,avg)
+}
+
+Output:
+enter the 1 number:5
+enter the 2 number:6
+enter the 3 number:7
+enter the 4 number:8
+enter the 5 number:9
+Sum of numbers is 35 and average is 7
+```
+
+//////////////////////////////  Table of any Whole Number /////////////////////////// 
+
+```
+#include<stdio.h>
+int main()
+{
+   int i,j,k;
+   printf("Kindly enter the number whose table is required :");
+   scanf("%d",&i);
+   for(j=0;j<11;j++)
+    {
+      i*j;
+      printf("%d multiplied by %d gives %d\n",i,j,i*j);
+    }
+ return 0;
+}
+
+Output:
+Kindly enter the number whose table is required :19
+19 multiplied by 0 gives 0
+19 multiplied by 1 gives 19
+19 multiplied by 2 gives 38
+19 multiplied by 3 gives 57
+19 multiplied by 4 gives 76
+19 multiplied by 5 gives 95
+19 multiplied by 6 gives 114
+19 multiplied by 7 gives 133
+19 multiplied by 8 gives 152
+19 multiplied by 9 gives 171
+19 multiplied by 10 gives 190
+```
+
+////////////////////////////////////  Tables in Range  //////////////////////////
+
+```
+
+#include<stdio.h>
+int main()
+{
+   int h,i,j,k;
+   printf("Kindly enter the first number of the range :");
+   scanf("%d",&h);
+   printf("Kindly enter the last  number of the range :");
+   scanf("%d",&i);
+  for(h=h;h<=i;h++)
+    {
+      for(j=0;j<11;j++)
+        {
+          h*j;
+          printf("%d multiplied by %d gives %d\n",h,j,h*j);
+        }
+    }
+ return 0;
+}
+
+Output:
+Kindly enter the first number of the range :12
+Kindly enter the last  number of the range :14
+12 multiplied by 0 gives 0
+12 multiplied by 1 gives 12
+12 multiplied by 2 gives 24
+12 multiplied by 3 gives 36
+12 multiplied by 4 gives 48
+12 multiplied by 5 gives 60
+12 multiplied by 6 gives 72
+12 multiplied by 7 gives 84
+12 multiplied by 8 gives 96
+12 multiplied by 9 gives 108
+12 multiplied by 10 gives 120
+13 multiplied by 0 gives 0
+13 multiplied by 1 gives 13
+13 multiplied by 2 gives 26
+13 multiplied by 3 gives 39
+13 multiplied by 4 gives 52
+13 multiplied by 5 gives 65
+13 multiplied by 6 gives 78
+13 multiplied by 7 gives 91
+13 multiplied by 8 gives 104
+13 multiplied by 9 gives 117
+13 multiplied by 10 gives 130
+14 multiplied by 0 gives 0
+14 multiplied by 1 gives 14
+14 multiplied by 2 gives 28
+14 multiplied by 3 gives 42
+14 multiplied by 4 gives 56
+14 multiplied by 5 gives 70
+14 multiplied by 6 gives 84
+14 multiplied by 7 gives 98
+14 multiplied by 8 gives 112
+14 multiplied by 9 gives 126
+14 multiplied by 10 gives 140
+
+```
+
+/////////////////////////////////  Even  tables in Range  ///////////////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+   int h,i,j,k;
+   printf("Kindly enter the first number of the range :");
+   scanf("%d",&h);
+   printf("Kindly enter the last  number of the range :");
+   scanf("%d",&i);
+  for(h=h;h<=i;h++)
+    {
+     if(h%2==0)
+      {
+        for(j=0;j<11;j++)
+                {
+                        h*j;
+                        printf("%d multiplied by %d gives %d\n",h,j,h*j);
+                }
+      }
+    }
+ return 0;
+}
+
+Output:
+Kindly enter the first number of the range :21
+Kindly enter the last  number of the range :25
+22 multiplied by 0 gives 0
+22 multiplied by 1 gives 22
+22 multiplied by 2 gives 44
+22 multiplied by 3 gives 66
+22 multiplied by 4 gives 88
+22 multiplied by 5 gives 110
+22 multiplied by 6 gives 132
+22 multiplied by 7 gives 154
+22 multiplied by 8 gives 176
+22 multiplied by 9 gives 198
+22 multiplied by 10 gives 220
+24 multiplied by 0 gives 0
+24 multiplied by 1 gives 24
+24 multiplied by 2 gives 48
+24 multiplied by 3 gives 72
+24 multiplied by 4 gives 96
+24 multiplied by 5 gives 120
+24 multiplied by 6 gives 144
+24 multiplied by 7 gives 168
+24 multiplied by 8 gives 192
+24 multiplied by 9 gives 216
+24 multiplied by 10 gives 240
+```
+
+////////////////////////////  Star Pattern ///////////////////////////  
+
+```
+#include<stdio.h>
+int main()
+{
+    int i, j;
+    for (i=0 ; i<5 ; i++)
+    {   
+		for (j=0 ; j<i ; j++)
+      {
+       printf(" * ");
+      }
+     printf("\n");
+    }
+
+}
+
+
+Output:
+*
+**
+***
+****
+```
+
+////////////////////////////// Prime Number ////////////////////////////////////
+
+```
+
+#include<stdio.h>
+int main()
+{
+        int i,j,k,l;
+        printf("\nEnter the number to check whether it is prime or not :");
+        scanf("%d",&i);l=3;
+        for(j=2;j<i;j++)
+                {
+                if(l!=0){
+                                k=i%j;
+                        if(k==0)
+                                {
+                                        printf("\nthe number you entered is not a prime number\n\n");l=0;
+                                }
+                        }
+                }
+        if(l!=0)
+                        {
+                                printf("\nthe number you entered is a prime number\n\n");
+                        }
+        return 0;
+}
+
+Output:
+Enter the number to check whether it is prime or not :17
+
+the number you entered is a prime number
+
+```
+
+////////////////////////////////
