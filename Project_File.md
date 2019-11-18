@@ -85,15 +85,17 @@ int main()
         scanf("%d", &a);                                                                                                               			b=a%3;c=a%5;
         d=a%15;
         if (d==0)       
-		{                                                                                                                     					printf("\n\nfizzbuzz\n\n");
-        }
+		{                                         
+		printf("\n\nfizzbuzz\n\n");
+        	}
         else if (b==0)
         {
                 printf("\n\nfizz\n\n");
         }
         else if (c==0)
-        {                                                                                                                                     printf("\n\nbuzz\n\n");                                        
-              }
+        {        
+		printf("\n\nbuzz\n\n");                                        
+        }
         else
         {
         printf("\n\n %d \n\n", a);
@@ -340,4 +342,174 @@ the number you entered is a prime number
 
 ```
 
-////////////////////////////////
+//////////////////////////////  Operator Operand  //////////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+float a,b;
+ char c;
+printf("enter first  number:");
+scanf("%f",&a);
+printf("enter operator[+ - % / *]:");
+scanf(" %c",&c);
+printf("enter second number:");
+scanf("%f",&b);
+int d,r;
+d=(int) a;
+r=(int) b;
+switch(c)
+{
+case '+': printf("The result is:%.2f\n",a+b); break;
+case '-':printf("The result is:%.2f\n",a-b); break;
+case '*':printf("The result is:%.2f\n",a*b); break;
+case '%':printf("The result is:%d\n",d%r); break;
+case '/':printf("The result is:%.2f\n",a/b); break;
+default : printf("Enter correct operator ");
+}
+return 0;
+}
+
+Output:
+enter first  number:20
+enter operator[+ - % / *]: *
+enter second number:10
+The result is:200.00
+```
+
+///////////////////////////////  Calculator  /////////////////////////////
+
+``` 
+#include<stdio.h>
+void main()
+
+{ 
+puts(" _______________");
+puts("|               |");
+puts("|_______________|");
+puts("| 1 | 2 | 3 |   |");
+puts("|___|___|___|   |");
+puts("| 4 | 5 | 6 | + |");
+puts("|___|___|___|___|");
+puts("| 7 | 8 | 9 | - |");
+puts("|___|___|___|___|");
+puts("|     0     | * |");
+puts("|___________|___|");
+}
+
+Output:
+_______________
+|               |
+|_______________|
+| 1 | 2 | 3 |   |
+|___|___|___|   |
+| 4 | 5 | 6 | + |
+|___|___|___|___|
+| 7 | 8 | 9 | - |
+|___|___|___|___|
+|     0     | * |
+|___________|___|
+
+```
+
+///////////////////////////  Greteast of Two Numbers  //////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+    int num1, num2;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    if (num1 > num2)
+    printf("First Number is Greatest i.e %d", num1);
+    else
+    printf("Second Number is Greatest i.e %d", num2); 
+    return 0;
+}
+
+Output:
+Enter the first number: 189
+Enter the second number: 222
+Second Number is Greatest i.e 222
+```
+
+///////////////////////////////  Area and Volume of Rectangle  ///////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+ int l,b,h;
+ printf("Enter length of rectangle:");
+ scanf("%d",&l);
+ printf("\nEnter breadth of rectangle:");
+ scanf("%d",&b);
+ printf("\nEnter height of rectangle:");
+ scanf("%d",&h);
+ printf("\nThe area of rectangle is:%d",l*b);
+ printf("\nThe volume is :%d\n",l*b*h);
+ return 0;
+ }
+ 
+ Output:
+ Enter length of rectangle:4 
+
+Enter breadth of rectangle:3 
+
+Enter height of rectangle:4
+
+The area of rectangle is:12
+The volume is :48
+
+```
+
+////////////////////////////////////  Area,Diameter,Circumference of Circle  //////////////////////////////
+
+```
+ #include<stdio.h>
+ int main()
+  {
+   float a;   
+   const float pi=3.14;
+   printf("Enter radius of circle:");
+    scanf("%f\n",&a);
+  printf("diameter of circle is:%f\n",2*a);
+  printf("circumference of circle:%f\n",2*pi*a);
+  printf("Area of circle:%f\n",pi*a*a);
+return 0;
+ } 
+ 
+Output:
+Enter radius of circle:6
+diameter of circle is:12.000000
+circumference of circle:37.680000
+Area of circle:113.040001
+```
+
+//////////////////////////////  Factorial of any Number  ////////////////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+int a,result=1;
+printf("Enter the factorial of:");
+scanf("%d",&a);
+for(int i=a;i>=1;i--)
+{
+printf("%d X ",i);
+result=result*i;
+}
+printf("= %d\n",result);
+return 0;
+}
+
+Output:
+Enter the factorial of:5
+5 X 4 X 3 X 2 X 1 X = 120
+```
+
