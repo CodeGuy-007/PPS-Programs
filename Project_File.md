@@ -8,7 +8,7 @@ Submitted To: Prof. Ranjodh Kaur
 
 
 
-////////////////////// Farenheit to Centigrade ///////////////////////////
+////////////////////// Farenheit to Centigrade /////////////////////////
 #include <stdio.h>
 float temp_f;     /* degrees fahrenheit */
 float temp_c;     /* degrees centigrade */
