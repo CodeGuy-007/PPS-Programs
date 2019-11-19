@@ -332,7 +332,7 @@ Output:
 #include<stdio.h>
 int main() 
 {
-  int names[5];
+  char names[5];
   printf("Enter 5 names: ");
   
   for(int i = 0; i < 5; ++i) 
@@ -349,7 +349,7 @@ int main()
 }
 
 Output:
-Enter 5 names: Akshat
+Enter 5 names: akshat
 rahul
 sunil
 rohit
