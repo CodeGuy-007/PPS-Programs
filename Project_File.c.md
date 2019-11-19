@@ -325,6 +325,34 @@ Output:
 ****
 ```
 
+///////////////////////////  Storing and Displaying data in Array  //////////////////////////
+
+
+```
+#include<stdio.h>
+int main()
+{
+	int i,j,k;
+	char name[6];
+for(i=1;i<6;i++)
+	{
+		printf("Enter the name of patient number %d :,i");
+		scanf("%c,&name[i]");
+	}
+
+for(k=1;k<6;k++)
+	{
+		printf("Enter the Patient No. Whose name you want to display :");
+		scanf("%d,&j");
+		i=j;
+		printf(" The patient name is %c",name[j]);
+	}
+return 0;
+}
+
+```
+
+
 ////////////////////////////// Prime Number ////////////////////////////////////
 
 ```
