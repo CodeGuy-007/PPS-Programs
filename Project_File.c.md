@@ -332,33 +332,37 @@ Output:
 #include<stdio.h>
 int main() 
 {
-  int values[5];
-  printf("Enter 5 integers: ");
+  int names[5];
+  printf("Enter 5 names: ");
   
   for(int i = 0; i < 5; ++i) 
   {
-     scanf("%d", &values[i]);
+     scanf("%d", &names[i]);
   }
-  printf("Displaying integers: ");
+  printf("Displaying names: ");
   
   for(int i = 0; i < 5; ++i) 
   {
-     printf("%d\n", values[i]);
+     printf("%d\n", names[i]);
   }
   return 0;
 }
 
 Output:
-Enter 5 integers: 1
--3
-34
-0
-3
-Displaying integers: 1
--3
-34
-0
-3
+Enter 5 names: Akshat
+rahul
+sunil
+rohit
+dhruv
+Displaying names: Akshat
+rahul
+sunil
+rohit
+dhruv
+
+
+
+
 
 ```
 
