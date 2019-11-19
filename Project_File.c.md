@@ -330,39 +330,32 @@ Output:
 
 ```
 #include<stdio.h>
-int main() 
+int main()
 {
-  char names[5];
-  printf("Enter 5 names: ");
-  
-  for(int i = 0; i < 5; ++i) 
+  int values[5];
+  printf("Enter 5 integers: ");
+
+  for(int i = 0; i < 5; ++i)                                                                                                       
   {
-     scanf("%d", &names[i]);
-  }
-  printf("Displaying names: ");
-  
-  for(int i = 0; i < 5; ++i) 
-  {
-     printf("%d\n", names[i]);
-  }
+  scanf("%d", &values[i]);                                                                                                                 }                                                                                                                                                                                                                                          
+  printf("Displaying integers: ");
+  for(int i = 0; i < 5; ++i)                                                                                                               {                                                                                                                                    
+  printf("%d\n", values[i]);                                                                                                               }                                       
   return 0;
-}
+  }
 
 Output:
-Enter 5 names: akshat
-rahul
-sunil
-rohit
-dhruv
-Displaying names: Akshat
-rahul
-sunil
-rohit
-dhruv
+Enter 5 integers:5
+10
+3
+7
+4
 
-
-
-
+Displaying names:5
+10
+3
+7
+4
 
 ```
 
