@@ -329,26 +329,34 @@ Output:
 
 
 ```
-#include<stdio.h>
-int main()
+#inlude<stdio.h>
+int main() 
 {
-	int i,j,k;
-	char name[6];
-for(i=1;i<6;i++)
-	{
-		printf("Enter the name of patient number %d :,i");
-		scanf("%c,&name[i]");
-	}
-
-for(k=1;k<6;k++)
-	{
-		printf("Enter the Patient No. Whose name you want to display :");
-		scanf("%d,&j");
-		i=j;
-		printf(" The patient name is %c",name[j]);
-	}
-return 0;
+  int values[5];
+  printf("Enter 5 integers: ");
+  
+  for(int i = 0; i < 5; ++i) {
+     scanf("%d", &values[i]);
+  }
+  printf("Displaying integers: ");
+  
+  for(int i = 0; i < 5; ++i) {
+     printf("%d\n", values[i]);
+  }
+  return 0;
 }
+
+Output:
+Enter 5 integers: 1
+-3
+34
+0
+3
+Displaying integers: 1
+-3
+34
+0
+3
 
 ```
 
