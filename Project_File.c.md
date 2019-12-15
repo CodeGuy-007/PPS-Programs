@@ -53,13 +53,13 @@ Input a temperature (in Centigrade): 45
 int akshat();            //function declaration ,different from variable declaration (like int a)//
 int main()              //a function is always declared before starting the main program//
 {
-int akshat()
+int akshat()		//function defination//
 {
 
 printf(" hi Akshat");
 
 }
-akshat();
+akshat();		//function calling inside main function//
 return 0;
 }
 
@@ -68,7 +68,7 @@ hi Akshat
 ```
 
 
-///////////////////////////////  Even-Odd  /////////////////////////
+/////////////////////////////// To Check whether Entered Number is Even or Odd  /////////////////////////
 ```
 #include<stdio.h>
 int main()
@@ -335,23 +335,17 @@ int main()
   int values[5];
   printf("Enter 5 integers: ");
 
-  for(int i = 0; i < 5; ++i)                                                                                                       
+  for(int i = 0; i < 5; i++)                                                                                                       
   {
-  scanf("%d", &values[i]);                                                                                                                 }                                                                                                                                                                                                                                          
+  scanf("%d \n", &values[i]);                                                                                                                 }                                                                                                                                                                                                                                          
   printf("Displaying integers: ");
-  for(int i = 0; i < 5; ++i)                                                                                                               {                                                                                                                                    
-  printf("%d\n", values[i]);                                                                                                               }                                       
+  for(int i = 0; i < 5; i++)                                                                                                               {                                                                                                                                    
+  printf("%d \n", values[i]);                                                                                                               }                                       
   return 0;
   }
 
 Output:
 Enter 5 integers:5
-10
-3
-7
-4
-
-Displaying names:5
 10
 3
 7
@@ -392,9 +386,32 @@ Enter the number to check whether it is prime or not :17
 
 the number you entered is a prime number
 
-```
 
-//////////////////////////////  Operator Operand  //////////////////////////
+```
+///////////////////////////////// Factorial of Number using Recursion /////////////////////
+
+```
+#include<stdio.h>
+int fact(int);
+void main()
+{
+    int x,n;
+    printf(" Enter the Number to Find Factorial :");
+    scanf("%d",&n);
+ 
+    x=fact(n);
+    printf(" Factorial of %d is %d",n,x);
+ 
+}
+int fact(int n)
+{
+    if(n==0)
+        return(1);
+    else
+    	return(n*fact(n-1));       //function calling itself//
+}
+
+//////////////////////////////  Operator Operand Using Switch Case  //////////////////////////
 
 ```
 #include<stdio.h>
@@ -430,42 +447,43 @@ enter second number:10
 The result is:200.00
 ```
 
-///////////////////////////////  Calculator  /////////////////////////////
+///////////////////////////////  Swappiing Two Numbers Using Call By Reference  /////////////////////////////
 
-``` 
+```
 #include<stdio.h>
-void main()
+void swapnum ( int *var1, int *var2 )
+{
+   int tempnum ;
+   tempnum = *var1 ;
+   *var1 = *var2 ;
+   *var2 = tempnum ;
+}
+int main( )
+{
+   int num1 = 35, num2 = 45 ;
+   printf("Before swapping:");
+   printf("\nnum1 value is %d", num1);
+   printf("\nnum2 value is %d", num2);
 
-{ 
-puts(" _______________");
-puts("|               |");
-puts("|_______________|");
-puts("| 1 | 2 | 3 |   |");
-puts("|___|___|___|   |");
-puts("| 4 | 5 | 6 | + |");
-puts("|___|___|___|___|");
-puts("| 7 | 8 | 9 | - |");
-puts("|___|___|___|___|");
-puts("|     0     | * |");
-puts("|___________|___|");
+   /*calling swap function*/
+   swapnum( &num1, &num2 );
+
+   printf("\nAfter swapping:");
+   printf("\nnum1 value is %d", num1);
+   printf("\nnum2 value is %d", num2);
+   return 0;
 }
 
 Output:
-_______________
-|               |
-|_______________|
-| 1 | 2 | 3 |   |
-|___|___|___|   |
-| 4 | 5 | 6 | + |
-|___|___|___|___|
-| 7 | 8 | 9 | - |
-|___|___|___|___|
-|     0     | * |
-|___________|___|
-
+Before swapping:
+num1 value is 35
+num2 value is 45
+After swapping:
+num1 value is 45
+num2 value is 35
 ```
 
-///////////////////////////  Greteast of Two Numbers  //////////////////////
+///////////////////////////  Greater of Two Numbers  //////////////////////
 
 ```
 #include<stdio.h>
@@ -477,9 +495,9 @@ int main()
     printf("Enter the second number: ");
     scanf("%d", &num2);
     if (num1 > num2)
-    printf("First Number is Greatest i.e %d", num1);
+    printf("First Number is Greater i.e %d", num1);
     else
-    printf("Second Number is Greatest i.e %d", num2); 
+    printf("Second Number is Greater i.e %d", num2); 
     return 0;
 }
 
