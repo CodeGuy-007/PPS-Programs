@@ -388,6 +388,23 @@ the number you entered is a prime number
 
 
 ```
+//////////////////////////////  Factorial of number without using Recursion  ////////////////////////////////
+
+```
+#include<stdio.h>
+int main()
+{
+int a,result=1;
+printf("Enter the factorial of:");
+scanf("%d",&a);
+for(int i=a;i>=1;i--)
+{
+printf("%d X ",i);
+result=result*i;
+}
+printf("= %d\n",result);
+return 0;
+}
 ///////////////////////////////// Factorial of Number using Recursion /////////////////////
 
 ```
@@ -448,41 +465,8 @@ enter second number:10
 The result is:200.00
 ```
 
-///////////////////////////////  Swappiing Two Numbers Using Call By Reference  /////////////////////////////
 
-```
-#include<stdio.h>
-void swapnum ( int *var1, int *var2 )
-{
-   int tempnum ;
-   tempnum = *var1 ;
-   *var1 = *var2 ;
-   *var2 = tempnum ;
-}
-int main( )
-{
-   int num1 = 35, num2 = 45 ;
-   printf("Before swapping:");
-   printf("\nnum1 value is %d", num1);
-   printf("\nnum2 value is %d", num2);
 
-   /*calling swap function*/
-   swapnum( &num1, &num2 );
-
-   printf("\nAfter swapping:");
-   printf("\nnum1 value is %d", num1);
-   printf("\nnum2 value is %d", num2);
-   return 0;
-}
-
-Output:
-Before swapping:
-num1 value is 35
-num2 value is 45
-After swapping:
-num1 value is 45
-num2 value is 35
-```
 
 ///////////////////////////  Greater of Two Numbers  //////////////////////
 
@@ -561,25 +545,39 @@ circumference of circle:37.680000
 Area of circle:113.040001
 ```
 
-//////////////////////////////  Factorial of any Number  ////////////////////////////////
+
+///////////////////////////////  Swappiing Two Numbers Using Call By Reference  /////////////////////////////
 
 ```
 #include<stdio.h>
-int main()
+void swapnum ( int *var1, int *var2 )
 {
-int a,result=1;
-printf("Enter the factorial of:");
-scanf("%d",&a);
-for(int i=a;i>=1;i--)
-{
-printf("%d X ",i);
-result=result*i;
+   int tempnum ;
+   tempnum = *var1 ;
+   *var1 = *var2 ;
+   *var2 = tempnum ;
 }
-printf("= %d\n",result);
-return 0;
+int main( )
+{
+   int num1 = 35, num2 = 45 ;
+   printf("Before swapping:");
+   printf("\nnum1 value is %d", num1);
+   printf("\nnum2 value is %d", num2);
+
+   /*calling swap function*/
+   swapnum( &num1, &num2 );
+
+   printf("\nAfter swapping:");
+   printf("\nnum1 value is %d", num1);
+   printf("\nnum2 value is %d", num2);
+   return 0;
 }
 
 Output:
-Enter the factorial of:5
-5 X 4 X 3 X 2 X 1 X = 120
+Before swapping:
+num1 value is 35
+num2 value is 45
+After swapping:
+num1 value is 45
+num2 value is 35
 ```
